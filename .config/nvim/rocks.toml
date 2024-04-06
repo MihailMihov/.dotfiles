@@ -19,10 +19,4 @@
 "nvim-surround" = "2.1.5"
 "neorg" = "8.4.0"
 
-tree-sitter-c = "scm"
-tree-sitter-lua = "scm"
-tree-sitter-vim = "scm"
-tree-sitter-vimdoc = "scm"
-tree-sitter-query = "scm"
-
 "nvim-treesitter" = { git = "nvim-treesitter/nvim-treesitter" }
