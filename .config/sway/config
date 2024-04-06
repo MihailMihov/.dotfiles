@@ -215,4 +215,8 @@ bar {
     }
 }
 
+default_border pixel
+
+gaps inner 10
+
 include /etc/sway/config.d/*
