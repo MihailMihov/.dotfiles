@@ -1,2 +1,2 @@
 require('options')
-require('rocks')
+require('rocks-nvim')

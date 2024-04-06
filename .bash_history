@@ -1,91 +1,3 @@
-nvim lua/plugins/nvim-surround.lua
-nvim rocks.toml 
-nvim rocks.toml 
-git status
-git diff
-git add .
-git commit -m "Update
-"
-git push
-git remote set-url origin git@github.com:mihailmihov/config.nvim.git
-git push
-clear
-git checkout main
-nvim
-nvim init.lua 
-clear
-fzf-tmux 
-nvim $(fzf-tmux)
-clear
-git push -u origin 
-git push -u origin main
-git branch -d master
-git push
-git push -u orgin master
-git branches
-git branch
-clear
-sudoedit /var/lib/portage/world
-sudo emerge --sync
-sudo emerge --ask --verbose --update --deep --newuse @world 
-clear
-sudo emerge --ask --depclean
-sudoedit /var/lib/portage/world
-sudo emerge --ask --depclean
-sudo emerge --deselect @steam
-rm -rf /etc/portage/package.use/emacs 
-sudo rm -rf /etc/portage/package.use/
-sudo emerge -uDNvp world
-sudo mkdir /etc/portage/package.use
-sudoedit /etc/portage/package.use/nerdfonts
-sudoedit /etc/portage/package.use/nerdfonts
-sudo emerge -uDNvp world
-cpuid2cpuflags 
-cpuid2cpuflags | sudo tee /etc/portage/package.use/cpu-flags
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge -uDNvp world
-sudo emerge --ask --verbose --update --deep --newuse @world 
-sudo emerge --ask --depclean
-clear
-sudo emerge --ask --verbose --update --deep --newuse @world
-sudoedit /etc/portage/package.license
-sudo rm /etc/portage/package.mask/cross-avr 
-sudo rm /etc/portage/package.license/nordvpn 
-sudo rm /etc/portage/package.license/steam 
-sudo rm /etc/portage/package.license/vscode 
-sudo rm /etc/portage/package.license/zoom 
-sudoedit /etc/portage/package.env/cross-avr 
-sudo rm -r /etc/portage/package.env/
-sudo ls /etc/portage/
-sudo ls /etc/portage/package.accept_keywords/
-sudo rm /etc/portage/package.accept_keywords/cross-avr 
-sudo rm /etc/portage/package.accept_keywords/ebuildtester
-sudo rm /etc/portage/package.accept_keywords/zoom 
-sudo rm /etc/portage/package.accept_keywords/steam 
-sudo rm /etc/portage/package.accept_keywords/nordvpn 
-sudo rm /etc/portage/package.accept_keywords/haskell 
-sudo emerge --ask --verbose --update --deep --newuse @world
-sudo emerge --deselect net-im/zoom
-sudo emerge --ask --depclena
-sudo emerge --ask --depclean
-clear
-ls
-neofetch 
-systemctl reboot
-cd it-kariera/Project_Palate_Paradise/
-nvim Project_Palate_Paradise/Program.cs 
 cd Project_Palate_Paradise/
 ls
 nvim Migrations/
@@ -497,4 +409,92 @@ systemctl reboot
 ls
 bash
 sudo systemctl disable greetd
+systemctl reboot
+dmenu_path
+wmenu
+clear
+cd .dotfiles/
+git status
+git add .
+git rm --cached .config/tmux/plugins/tmux-sensible/
+git status
+git rm --cached .config/tmux/plugins/tmux-sensible/ -f
+git status
+git commit
+git push
+clear
+nvim .config/sway/config 
+git status
+git add .config/sway/
+git commit
+git push
+nvim .config/sway/config 
+sudo emerge --deselect wmenu
+sudo emerge --ask --depclean
+sudo emerge --ask dev-libs/bemenu 
+bemenu
+bemenu-run 
+bemenu-run 
+builtin cd -- dev
+clad/CONTRIBUTING.md 
+clear
+bemenu-run -p ""
+bemenu-run
+cd
+nvim .config/sway/config 
+clear
+sudoedit /var/lib/portage/world
+clear
+swayidle 
+nvim .config/tmux/tmux.conf 
+nvim
+nvim .config/tmux/tmux.conf 
+nvim .config/tmux/tmux.conf 
+journalctl -u greetd
+clear
+sudo emerge --deselect greetd
+sudoedit /var/lib/portage/world
+sudo emerge --ask --depclena
+sudo emerge --ask --depclean
+sudo emerge --sync
+sudo emerge --ask --verbose --update --deep --newuse @world
+sudo emerge --ask --depclean
+clear
+sudo emerge --ask swayidle
+tmux
+tmux
+systemctl reboot
+nvim .config/sway/config 
+clear
+sudo emerge --ask libsixel
+img2sixel zad/1-1.png 
+clear
+swaylock
+swayidle
+swayidle --help
+swayidle -d
+clear
+neofetch
+emerge --info
+eselect repository list 
+eselect repository list --help
+eselect repository 
+eselect repository -i list
+eselect repository list -i
+sudo eselect repository remove crossdev
+sudo eselect repository remove crossdev -f
+sudo eselect repository remove -f crossdev 
+
+sudo eselect repository remove -f local
+sudo eselect repository list -i
+equery has repository gentoo-zh
+clear
+sudo ls /var/db/repos/
+sudo rm -rf /var/db/repos/haskell/
+sudo rm -rf /var/db/repos/salfter/
+clear
+sudo emerge --sync
+clear
+eix --installed-from-overlay 
+clear
 systemctl reboot

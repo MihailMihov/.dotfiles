@@ -19,7 +19,7 @@ set $term footclient
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu bemenu-run | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -36,11 +36,9 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
+exec swayidle -w \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -218,9 +216,5 @@ bar {
 default_border pixel
 
 gaps inner 8
-
-exec swayidle -w \
-  timeout 900 'swaymsg "output * power off"' \
-  resume 'swaymsg "output * power on"'
 
 include /etc/sway/config.d/*
