@@ -13,13 +13,17 @@ set $left h
 set $down j
 set $up k
 set $right l
+
 # Your preferred terminal emulator
 exec foot --server
 set $term footclient
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu bemenu-run | xargs swaymsg exec --
+
+set $screenshot grim -g "$(slurp -d)" - | wl-copy -t image/png
 
 ### Output configuration
 #
@@ -69,6 +73,9 @@ exec swayidle -w \
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Take a screenshot
+    bindsym $mod+Shift+s exec $screenshot
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

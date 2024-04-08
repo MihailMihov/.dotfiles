@@ -1,408 +1,3 @@
-cd Project_Palate_Paradise/
-ls
-nvim Migrations/
-nvim Data/AppDbContext.cs 
-sudo emerge --sync
-sudo emerge --ask --verbose --update --deep --newuse @world
-sudo emerge --ask --depclean
-equery d qtwebengine 
-equery d falkon
-equery d kdecore-meta
-equery g kdecore-meta
-emerge --info kdecore-meta
-clear
-sudo emerge --ask gui-wm/sway
-sudo emerge --ask gui-apps/foot
-clear
-mkdir ~/.config/sway
-cp /etc/sway/config ~/.config/sway/
-nvim ~/.config/sway/config 
-swaymsg -t get_outputs 
-sudo swaymsg -t get_outputs 
-clear
-sudo emerge --ask gui-apps/swaylock gui-apps/swayidle
-sway
-nvim .config/sway/config 
-clear
-systemctl disable sddm.service 
-clear
-nvim .bashrc 
-systemctl reboot
-tmux
-clear
-firefox
-sudo emerge --ask gui-apps/bemenu
-sudo emerge --ask bemenu
-sudo emerge --ask gui-apps/waybar
-sudo emerge --deselect bemenu
-sudo emerge --ask wmenu
-sudoedit /etc/portage/package.accept_keywords/wmenu
-sudo emerge --ask wmenu
-sudoedit /etc/portage/package.accept_keywords/wmenu
-sudo emerge --ask wmenu
-clear
-wmenu
-nvim .config/sway/config 
-nvim .config/sway/config 
-sudo emerge --deselect swaylock
-sudo emerge --deselect swayidle
-sudo emerge --ask --depclean
-nvim .config/sway/config 
-sudo emerge --deselect waybar
-sudo emerge --ask --depclean
-clear
-equery hasuse sway
-equery uses sway
-nvim .config/sway/config 
-logind
-clear
-tmux
-footclient
-nvim .config/sway/config 
-equery uses foot
-clear
-foot -s
-footclient 
-nvim .config/sway/config 
-systemctl reboot
-git subtree
-echo $TERM
-nvim .config/sway/config 
-clear
-sudo emerge --ask stow yq jq
-sudo emerge --ask stow yq app-misc/jq
-mkdir .dotfiles
-cd .dotfiles/
-mkdir .config
-mkdir .config/sway
-mkdir .config/neovim
-cp ~/.config/nvim/ .config/nvim
-cp ~/.config/nvim/ .config/nvim -r
-ls .config/
-rm -r .config/neovim/
-ls .config/nvim/
-cd .config/nvim/
-git branch
-git switch rocks-nvim 
-cd ..
-cd ..
-clear
-ls
-ls -alh
-ls .config/
-cp ~/.config/sway/config .config/sway/
-ls .config/sway/
-clear
-tree
-locate tree
-clear
-sudo emerge --ask tree
-sudo emerge --ask app-text/tree
-tree
-tree -a
-clear
-cd
-clear
-tmux
-cd .dot
-cd .dotfiles/
-clear
-tree -a
-cd .config/nvim/
-clear
-ls
-nvim \\
-mv \\ rocks.toml 
-nvim init.lua 
-nvim
-cd ../..\
-ls
-clear
-stow .
-nvim .config/sway/config 
-cd ..
-rm -rf .config/nvim/
-rm -rf .config/sway/
-cd .dotfiles/
-clear
-stow .
-nvim
-git init
-cd .config/nvim/
-rm -rf .git/
-ls
-ls -alh
-clear
-cd ..
-cd ..
-ls
-tree -a
-clear
-ls .config/
-ls ~/.config/
-nvim ~/.config/htop/htoprc
-nvim ~/.config/tmux/tmux.conf 
-cp ~/.config/tmux/tmux.conf .config/tmux/tmux.conf
-mkdir .config/tmux
-cp ~/.config/tmux/tmux.conf .config/tmux/tmux.conf
-clear
-tree -a
-git log
-nvim
-nvim
-nvim .dotfiles/.config/tmux/tmux.conf 
-tmux source .config/tmux/tmux.conf 
-nvim .dotfiles/.config/tmux/tmux.conf 
-nvim .config/tmux/tmux.conf 
-ls .config/
-ls -alh .config/
-rm -rf .config/tmux/
-cd .dotfiles/
-stow .
-ls -alh .config/
-ls -alh ~/.config/
-nvim ~/.config/tmux/tmux.conf 
-tmux source .config/tmux/tmux.conf 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ping google.com
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ping google.com
-ping github.com
-git clone git@github.com:tmux-plugins/tpm.git ~/.tmux/plugins/tpm
-tmux source .config/tmux/tmux.conf 
-cd ..
-ls .config/tmux/
-cd .dotfiles/
-clear
-ls .config/tmux/tmux.conf
-git submodule add https://github.com/tmux-plugins/tpm .config/tmux/plugins/tpm
-mkdir .config/tmux/plugins
-ls .config/tmux/
-ls .config/tmux/plugins/
-git submodule add git@github.com:tmux-plugins/tpm.git .config/tmux/plugins/tpm
-cd ..
-ls .config/tmux/plugins/
-tmux source .config/tmux/tmux.conf 
-clear
-git clone https://github.com/mihailmihov/PalateParadise
-git config http.proxy
-systemctl reboot
-tmux
-git clone https://github.com/vgvassilev/clad a/
-resolvectl domain github.com
-resolvectl domain enp7s0 github.com
-resolvectl query github.com
-git clone https://github.com/vgvassilev/clad a/
-git clone https://github.com/vgvassilev/clad a/ --verbose 
-git clone https://github.com/vgvassilev/clad a/ --verbose --verbose 
-git clone http://github.com/vgvassilev/clad a/ --verbose
-git clone https://github.com/vgvassilev/clad.git a
-sudo emerge --deselect git
-sudo emerge --ask --depclean
-sudo emerge --ask git
-sudo emerge --ask dev-vcs/git
-git
-git clone https://github.com/vgvassilev/clad.git a
-sudo tailscale down
-git clone https://github.com/vgvassilev/clad.git a
-ls
-rm -rf a
-clear
-ls
-rm -rf gse
-rm -rf sons-of-the-forest-container-image/
-sudo rm -rf sons-of-the-forest-container-image/
-ls
-sudo rm -rf sotf/
-ls tmp/
-sudo rm -rf tmp/
-clear
-rm -rf cleanrl/
-clear
-ls
-mkdir dev
-mv clad dev
-mv clad-test/ dev
-mv java/ dev
-mv llvm-project/ dev
-mv tennis/ dev
-ls
-mv alpine32/ dev
-clear
-ls
-mv it-kariera/ dev
-ls
-clear
-git clone https://github.com/tmux-plugins/tpm tpm
-ip addr
-systemctl disable tailscaled.service 
-systemctl disable tailscaled.service 
-clear
-ip addr
-systemctl reboot
-git clone https://github.com/tmux-plugins/tpm tpm
-ip addr
-dns
-firefox
-htop
-firefox
-nvim .config/sway/config 
-git clone https://github.com/tmux-plugins/tpm tpm
-clear
-systemctl query github.com
-resolvectl query github.com
-clear
-startplasma-wayland 
-clear
-journalctl
-journalctl -b 0
-resolvconf 
-resolvconf --help
-resolvconf -a
-resolvconf -a enp7s0 
-resolvconf -a enp7s0 1.1.1.1
-ip addr
-ip mroute 
-ip route
-cat /etc/resolv.
-cat /etc/resolv.conf 
-sudo tailscale up
-sudo systemctl enable tailscaled.service 
-sudo systemctl enable --now tailscaled
-sudo tailscale up
-sudo tailscale status
-sudo tailscale logout
-sudo tailscale
-sudo tailscale login
-resolvconf query github.com
-resolvectl query github.com
-sudo tailscale status
-sudo tailscale 
-sudo tailscale set
-sudo tailscale 
-sudo tailscale update
-sudo mv /etc/resolv.pre-tailscale-backup.conf /etc/resolv.conf 
-ls /etc/resolv.conf 
-nvim /etc/resolv.conf 
-clear
-sudo systemctl restart systemd-resolved.service 
-git clone https://github.com/tmux-plugins/tpm tpm
-rm -rf tpm
-clear
-tmux
-echo $TERM
-clear
-nvim
-clear
-clear
-clear
-nvim .config/tmux/tmux.conf 
-tmux source .config/tmux/tmux.conf 
-echo $TERM
-clear
-ls .config/tmux/plugins/
-clear
-ls .dotfiles/.config/tmux/plugins/
-clear
-cd .dotfiles/
-clear
-git add .
-git rm --cached .config/tmux/plugins/tmux-sensible/
-git rm --cached .config/tmux/plugins/tmux-sensible/ -f
-git status
-ls
-nvim .gitmodules 
-git commit -m "Initial commit"
-git push
-git remote add git@github.com:mihailmihov/dotfiles.git
-git remote add origin git@github.com:mihailmihov/dotfiles.git
-git push -u origin main
-git push -u origin main -f
-clear
-sudo tailscale status
-clear
-ls
-ls -alh
-cd ..
-clear
-ls .config/
-ls .config/containers/
-ls .config/dconf/user 
-nvim .config/dconf/user
-nvim .config/user-dirs.dirs 
-nvim .config/user-dirs.locale 
-cp .config/user-dirs.* .dotfiles/.config/
-ls .dotfiles/.config/
-cd .dotfiles/
-stow .
-rm ~/.config/user-dirs.*
-stow .
-clear
-ls
-ls -alh
-cd
-ls -alh .config/
-nvim .config/Unknown\ Organization/zoom.conf 
-clear
-journalctl --tail
-journalctl --help
-journalctl -b 0
-systemctl reboot
-clear
-nvim .dotfiles/.inputrc
-sudo emerge --sync
-sudo emerge --ask --verbose --update --deep --newuse @world
-cd .dotfiles/
-stow .
-ls
-ls -alh
-sudo emerge --ask --depclean
-journalctl -b 0
-source .inputrc 
-clear
-man foot.ini
-clear
-sudo emerge --ask --depclean
-ls -alh
-clear
-man foot.ini
-clear
-man foot.ini 
-mkdir .dotfiles/.config/foot
-nvim .dotfiles/.config/foot/foot.ini
-cat /etc/resolv.conf 
-clear
-set show-mode-in-prompt on
-echo $INPUTRC
-export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc 
-sudoedit /etc/bash/bashrc
-cp .bash* .dotfiles/
-ls .dotfiles/ -alh
-rm .bash*
-cd .dotfiles/
-stow .
-clear
-cd
-ls -alh
-rm -rf .steam*
-rm -rf .zoom/
-ls .tmux/plugins/
-rm -rf .tmux/
-tmux
-clear
-tmux
-tmux
-cd .dotfiles/
-stow .
-clear
-htop
-foot -s
-systemctl reboot
-nvim .dotfiles/.config/sway/config 
-man sway
-man 5 sway
-nvim .dotfiles/.config/sway/config 
-sudo emerge --ask greetd
 sudo systemctl enable greetd.service 
 clear
 systemctl reboot
@@ -498,3 +93,408 @@ clear
 eix --installed-from-overlay 
 clear
 systemctl reboot
+nvim
+nvim
+nvim
+nvim .config/nvim/lua/plugins/neorg.lua 
+nvim
+nvim --clean
+nvim
+nvim .config/nvim/lua/plugins/neorg.lua 
+nvim
+nvim .config/nvim/lua/plugins/neorg.lua 
+nvim
+sudo emerge --ask sys-fs/fswatch
+sudoedit /etc/portage/package.accept_keywords/neovim 
+sudoedit /etc/portage/package.accept_keywords/fswatch
+sudoedit /etc/portage/package.accept_keywords/fswatch
+sudo emerge --ask sys-fs/fswatch
+clear
+nvim
+nvim
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+nvim
+nvim .config/nvim/lua/options.lua 
+nvim
+nvim .config/nvim/lua/plugins/kanagawa.lua
+nvim .config/nvim/lua/options.lua 
+nvim
+nvim
+nvim
+nvim .config/nvim/lua/plugins/kanagawa.lua
+nvim
+nvim
+nvim
+nvim
+rm .config/nvim/lua/plugins/kanagawa.lua 
+nvi
+vi
+vi
+vi .config/nvim/lua/plugins/tokyonight.lua
+vi
+rm .config/nvim/lua/plugins/tokyonight.lua 
+nvim
+rm .config/nvim/lua/plugins/tokyonight.lua 
+vi .config/nvim/lua/plugins/tokyonight.lua
+vi
+vi .config/nvim/lua/plugins/tokyonight.lua
+ls .config/nvim/lua/plugins/
+touch .config/nvim/lua/plugins/tokyonight.lua
+vi
+ls .config/nvim/lua/plugins/
+vi .config/nvim/lua/plugins/tokyonight.lua
+vi
+nvim .config/nvim/lua/plugins/kanagawa.lua
+vi
+rm .config/nvim/lua/plugins/tokyonight.lua 
+vi
+vi .config/nvim/lua/plugins/neorg.lua 
+vi 
+vi .config/nvim/lua/options.lua 
+vi
+vi
+equery uses nerd-fonts
+sudoedit /etc/portage/package.use/nerdfonts 
+sudoedit /etc/portage/package.use/nerdfonts 
+sudo mv /etc/portage/package.use/nerdfonts /etc/portage/package.use/nerd-fonts
+clear
+sudo emerge --ask nerd-fonts
+vi
+vi dev/notes/clad.norg 
+emerge --info nerd-fonts 
+sudoedit /etc/portage/package.use/nerd-fonts 
+sudoedit /etc/portage/package.use/nerd-fonts 
+sudo emerge --ask nerd-fonts
+vi
+sudoedit /etc/portage/package.use/nerd-fonts 
+sudo emerge --ask nerd-fonts
+clear
+vi
+vi dev/notes/clad.norg 
+vi dev/notes/clad.norg 
+vi dev/notes/clad.norg 
+vi dev/notes/clad.norg 
+nvim
+nvim .config/nvim/lua/plugins/neorg.lua
+nvim .config/nvim/lua/plugins/neorg.lua
+nvim .config/nvim/lua/plugins/neorg.lua
+nvim .config/nvim/lua/plugins/neorg.lua
+nvim .config/nvim/init.lua 
+nvim .config/nvim/init.lua 
+nvim nvim .config/nvim/lua/rocks.lua 
+nvim nvim .config/nvim/lua/rocks.lua 
+mv .config/nvim/lua/rocks.lua .config/nvim/lua/rocks-nvim.lua
+nvim .config/nvim/init.lua 
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim .config/nvim/lua/plugins/neorg.lua 
+nvim
+nvim
+nvim
+cd .local/share/nvim/
+nvim rocks/lib/luarocks/rocks-5.1/rocks-config.nvim/1.2.3-1/rocks-config.nvim-1.2.3-1.rockspec 
+nvim
+lua --version
+lua -v
+clear
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim rocks/rocks_rtp/lua/neorg/modules/core/integrations/treesitter/module.lua 
+nvim
+clear
+cd
+nvim .config/nvim/init.lua 
+nvim .config/nvim/rocks.toml 
+cd .dotfiles/
+git status
+git add .
+git rm --cached -f .config/tmux/plugins/tmux-sensible/
+git status
+git commit
+git push
+clear
+nvim .config/nvim/rocks.toml 
+nvim
+nvim .config/nvim/lua/plugins/nvim-treesitter.lua
+nvim
+clear
+git status
+git add .config/nvim/
+git add .config/nvim/lua/plugins/
+git commit
+git push
+nvim .stow-local-ignore
+rm .stow-local-ignore 
+nvim .gitignore
+git status
+git add .gitignore 
+git status
+git commit
+git push
+stow .
+cd ..
+ls -alh
+nvim .gitconfig 
+ls -alh .config/
+rm -rf .config/kmonad/
+rm -rf .config/wandb/
+rm -rf .config/VSCodium/
+rm -rf .config/containers/
+ls -alh .config
+rm -rf .config/Unknown\ Organization/
+rm -rf .config/zoom
+rm -rf .config/zoom.conf 
+rm -rf .config/zoomus.conf 
+clear
+tmux
+vi
+vi
+vi dev/notes/clad.norg 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/tmux/tmux.conf 
+clear
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+nvim -V3log
+ls
+nvim log 
+sudo emerge --ask x11-terms/wezterm
+sudoedit /etc/portage/package.accept_keywords/wezterm
+sudo emerge --ask x11-terms/wezterm
+nvim
+nvim dev/notes/clad.norg 
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+echo -e "\x1B[31red\e[0m"
+nvim
+cd .dotfiles/
+ls
+ls .config/
+ls .config/foot/
+nvim .config/foot/foot.ini 
+echo -e "\e[1mbold\e[0m"
+echo -e "\e[3mitalic\e[0m"
+echo -e "\e[3m\e[1mbold italic\e[0m"
+echo -e "\e[4munderline\e[0m"
+echo -e "\e[9mstrikethrough\e[0m"
+echo -e "\x1B[31red\e[0m"
+printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
+man foot.ini 
+eselect fontconfig list 
+eselect fontconfig usage 
+nvim -c help neorg
+nvim -c "help neorg"
+nvim .config/tmux/tmux.conf 
+tmux
+clear
+nvim .config/nvim/lua/plugins/kanagawa.lua 
+nvim .config/nvim/lua/plugins/kanagawa.lua 
+ls
+mv tokyonight.lua .config/nvim/lua/plugins/
+nvim
+nvim .config/nvim/lua/plugins/tokyonight.lua 
+nvim .config/nvim/lua/plugins/kanagawa.lua 
+vi
+vi .config/nvim/lua/plugins/tokyonight.lua 
+vi .config/nvim/lua/plugins/kanagawa.lua 
+vi
+vi
+vi
+vi .config/nvim/lua/plugins/kanagawa.lua 
+vi
+vi .config/nvim/rocks.toml 
+vi
+git clone https://github.com/vhyrro/config
+nvim -u config/init.lua 
+ls config/
+ls config/lua/
+nvim -u config/
+mv .config/nvim .config/nvim.old
+mv config/ .config/nvim
+ls .config/
+ls .config/nvim
+nvim
+nvim
+nvim
+nvim .config/nvim/init.lua 
+nvim .config/nvim/rocks.toml 
+mv .config/nvim.old .config/nvim
+clear
+ls .dotfiles/
+cd .dotfiles/
+git status
+nvim .config/nvim/lua/rocks-nvim.lua 
+nivm
+nvim
+git clone https://github.com/vhyrro/config
+mv .config/nvim/ .config/nvim.old
+mv config/ .config/nvim
+ls .config/nvim
+vi .config/nvim/lua/rocks-setup.lua 
+vi
+vi
+vi .config/nvim/lua/rocks-setup.lua 
+vi .config/nvim/init.lua 
+mv .config/nvim.old .config/nvim
+clear
+ls .config/ | grep nvim
+clear
+sudo emerge --sync
+sudo emerge --ask --verbose --update --deep --newuse @world
+sudo emerge --ask --depclean
+clear
+nvim .config/nvim/init.lua 
+ls .config/
+cd ..
+ls .config/nvim/
+mv .config/nvim/nvim.old .config/nvim/
+mv .config/nvim/nvim.old .config/
+rm -rf .config/nvim
+mv .config/nvim.old .config/nvim
+clear
+ls .config/nvim
+vi
+vi
+vi
+sudo emerge --ask --oneshot dev-util/tree-sitter-cli
+vi
+vi
+vi
+ls .config/nvim
+mv .config/nvim/nvim.old/ .config/
+rm -rf .config/nvim
+mv .config/nvim.old/ .config/nvim
+ls .config/nvim
+vi
+vi .config/nvim/lua/plugins/kanagawa.lua 
+vi
+nvim dev/notes/clad.norg 
+nvim .config/nvim/rocks.toml 
+nvim
+vi
+vi
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/nvim-treesitter.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/nvim-treesitter.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+vi
+vi
+vi
+vi .config/nvim/rocks.toml 
+vi
+vi .config/nvim/rocks.toml 
+vi
+vi
+vi
+vi .config/nvim/rocks.toml 
+vi
+vi
+vi .config/nvim/rocks.toml 
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+vi
+ls
+ls .config/nvim/
+ls .config/nvim/lua/plugins/nvim-treesitter.lua 
+vi .config/nvim/lua/plugins/nvim-treesitter.lua
+rm .config/nvim/lua/plugins/tokyonight.lua 
+clear
+vi .config/nvim/lua/plugins/neorg.lua 
+clea
+vi
+vi .config/nvim/lua/plugins/neorg.lua 
+nvim --version
+vi
+ls .config/nvim/lua/plugins/
+vi .config/nvim/lua/plugins/nvim-treesitter.lua 
+vi .config/nvim/rocks.toml 
+vi .config/nvim/init.lua 
+vi .config/nvim/lua/plugins/neorg.lua 
+sudo emerge --ask grim slurp
+clear
+grim -g "$(slurp)"
+nvim .config/sway/config 
+nvim .config/sway/config 
+nvim .config/sway/config 
+grim -g "$(slurp)"
+exec grim -g "$(slurp)"
+exec grim -g "$(slurp)"
