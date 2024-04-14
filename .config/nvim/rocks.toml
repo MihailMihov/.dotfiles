@@ -21,8 +21,18 @@ tree-sitter-vim = "scm"
 tree-sitter-vimdoc = "scm"
 tree-sitter-lua = "scm"
 tree-sitter-query = "scm"
+tree-sitter-c_sharp = "scm"
+tree-sitter-toml = "scm"
+tree-sitter-markdown = "scm"
 
-"kanagawa.nvim" = { version = "scm", opt = true }
+"kanagawa.nvim" = "scm"
 "fzf-lua" = "0.0.1216"
 "nvim-surround" = "2.1.5"
 "neorg" = "8.4.0"
+
+[treesitter]
+auto_highlight = "all"
+auto_install = "prompt"
+
+[config]
+colorscheme = "kanagawa"
