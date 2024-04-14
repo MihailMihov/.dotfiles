@@ -20,8 +20,7 @@ source /usr/share/git/git-prompt.sh
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-source /usr/share/bash-completion/completions/fzf
-source /usr/share/fzf/key-bindings.bash
+eval "$(fzf --bash)"
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	dbus-run-session sway
