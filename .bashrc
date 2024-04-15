@@ -21,6 +21,7 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 eval "$(fzf --bash)"
+export FZF_DEFAULT_COMMAND='fd . --hidden --exclude ".git"'
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	dbus-run-session sway
