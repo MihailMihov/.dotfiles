@@ -58,6 +58,12 @@ exec swayidle -w \
 #       middle_emulation enabled
 #   }
 #
+
+input type:keyboard {
+	xkb_layout us,bg(phonetic)
+	xkb_options grp:alt_shift_toggle
+}
+
 input type:touchpad {
 	tap enabled
 	natural_scroll enabled
