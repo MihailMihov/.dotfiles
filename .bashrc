@@ -22,6 +22,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND='fd . --hidden --exclude ".git"'
+export FZF_TMUX=1
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	dbus-run-session sway
