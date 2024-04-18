@@ -11,28 +11,15 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.21.3"
-"rocks-config.nvim" = "1.4.0"
-"rocks-treesitter.nvim" = "scm"
-"nvim-treesitter" = "0.9.2"
+"rocks.nvim" = "scm"
+"rocks-config.nvim" = "scm"
+"rocks-git.nvim" = "scm"
 
-tree-sitter-c = "scm"
-tree-sitter-vim = "scm"
-tree-sitter-vimdoc = "scm"
-tree-sitter-lua = "scm"
-tree-sitter-query = "scm"
-tree-sitter-c_sharp = "scm"
-tree-sitter-toml = "scm"
-tree-sitter-markdown = "scm"
-
-"kanagawa.nvim" = "scm"
-"fzf-lua" = "0.0.1225"
+"kanagawa.nvim" = { version = "scm", opt = true }
+"fzf-lua" = "0.0.1226"
 "nvim-surround" = "2.1.5"
 "neorg" = "8.4.0"
 
-[treesitter]
-auto_highlight = "all"
-auto_install = "prompt"
-
-[config]
-colorscheme = "kanagawa"
+[plugins.nvim-treesitter]
+git = "nvim-treesitter/nvim-treesitter"
+rev = "v0.9.2^{}"
