@@ -4,7 +4,7 @@
 
 date_formatted=$(date "+%F %H:%M:%S")
 
-battery_status="$(cat /sys/class/power_supply/BAT0/capacity)%"
+battery_status="$(cat /sys/class/power_supply/BAT0/capacity)% ($(cat /sys/class/power_supply/BAT0/status))"
 
 keyboard_layout=$(swaymsg -t get_inputs | jq -r '[.[] | select(.type == "keyboard")][0].xkb_active_layout_name')
 
