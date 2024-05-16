@@ -24,7 +24,7 @@ eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND='fd . --hidden --exclude ".git"'
 export FZF_TMUX=1
 
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+if [ -z "${WAYLAND_DISPLAY}" ] && ! [ -z "${XDG_VTNR}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	dbus-run-session sway
 fi
 
