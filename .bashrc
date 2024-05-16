@@ -27,3 +27,8 @@ export FZF_TMUX=1
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	dbus-run-session sway
 fi
+
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=50000
+export HISTFILESIZE=50000
+shopt -s histappend
