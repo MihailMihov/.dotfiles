@@ -36,6 +36,8 @@ set $screenshot grim -g "$(slurp -d)" - | wl-copy -t image/png
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
+output * bg ~/walls/aerial/a_aerial_view_of_a_mountain.jpg fill
+
 ### Idle configuration
 #
 # Example configuration:
