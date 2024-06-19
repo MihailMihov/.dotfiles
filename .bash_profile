@@ -5,5 +5,3 @@
 if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
 fi
-
-export PATH="$PATH:/home/mihail/.dotnet/tools"
